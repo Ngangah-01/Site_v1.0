@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WIN | Engineering Your Digital Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f7f9fb",
+              "surface-tint": "#565e74",
+              "on-primary-container": "#7c839b",
+              "tertiary-fixed-dim": "#d0bcff",
+              "on-background": "#191c1e",
+              "inverse-on-surface": "#eff1f3",
+              "on-surface-variant": "#45464d",
+              "secondary": "#0058be",
+              "surface-dim": "#d8dadc",
+              "on-tertiary-container": "#9466ff",
+              "secondary-container": "#2170e4",
+              "surface-container-low": "#f2f4f6",
+              "tertiary-fixed": "#e9ddff",
+              "on-secondary-container": "#fefcff",
+              "error-container": "#ffdad6",
+              "on-primary": "#ffffff",
+              "background": "#f7f9fb",
+              "surface-container-highest": "#e0e3e5",
+              "on-primary-fixed-variant": "#3f465c",
+              "primary": "#000000",
+              "on-surface": "#191c1e",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#bec6e0",
+              "on-secondary": "#ffffff",
+              "error": "#ba1a1a",
+              "tertiary-container": "#23005c",
+              "primary-fixed": "#dae2fd",
+              "outline": "#76777d",
+              "inverse-primary": "#bec6e0",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed": "#d8e2ff",
+              "outline-variant": "#c6c6cd",
+              "surface-container": "#eceef0",
+              "on-secondary-fixed-variant": "#004395",
+              "tertiary": "#000000",
+              "surface-container-high": "#e6e8ea",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#23005c",
+              "surface-bright": "#f7f9fb",
+              "primary-container": "#131b2e",
+              "on-primary-fixed": "#131b2e",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#adc6ff",
+              "surface-variant": "#e0e3e5",
+              "inverse-surface": "#2d3133",
+              "on-secondary-fixed": "#001a42",
+              "on-tertiary-fixed-variant": "#5516be"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #0058be, #9466ff, #d0bcff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .momentum-gradient {
+        background: linear-gradient(135deg, #0058be 0%, #9466ff 50%, #d0bcff 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation (Glass Rail) -->
+<nav class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-md rounded-full mt-4 mx-auto max-w-7xl sticky top-4 z-50 flex justify-between items-center px-8 py-4 w-[95%] md:w-full shadow-xl shadow-slate-900/5">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-slate-50 font-headline">WIN</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-1 hover:scale-105 transition-transform duration-300" href="./home.html">Home</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors hover:scale-105 transition-transform duration-300" href="./services.html">Services</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors hover:scale-105 transition-transform duration-300" href="./about.html">About</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors hover:scale-105 transition-transform duration-300" href="./pricing.html">Pricing</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors hover:scale-105 transition-transform duration-300" href="./projects.html">Projects</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors hover:scale-105 transition-transform duration-300" href="./contact.HTML">Contact</a>
+</div>
+<button class="momentum-gradient text-on-primary px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform duration-300 active:scale-95">Get a Quote</button>
+</nav>
+<!-- Section 1: Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden px-8 py-24">
+<!-- Background Accents -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-100/40 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-100/30 rounded-full blur-[100px]"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto text-center">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/10 text-secondary font-label text-[11px] font-bold tracking-widest uppercase mb-8">Established in Excellence</span>
+<h1 class="font-headline text-5xl md:text-8xl font-extrabold tracking-tighter text-primary-container leading-[0.9] mb-8">
+                Engineering Your <br/> <span class="gradient-text">Digital Future</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-2xl max-w-2xl mx-auto mb-12 font-body leading-relaxed">
+                We build premium, scalable, and elegant digital solutions for industry leaders. Curating high-performance digital environments with architectural precision.
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="momentum-gradient text-on-primary px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-blue-500/20">Get a Quote</button>
+<button class="bg-surface-container-high text-on-surface px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-colors">View Our Work</button>
+</div>
+</div>
+<!-- Abstract Decorative Elements -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 opacity-30">
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+</div>
+</section>
+<!-- Section 2: Services Preview -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<span class="text-secondary font-label text-[11px] font-bold tracking-[0.2em] uppercase mb-4 block">Our Expertise</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary-container tracking-tight">Technical Mastery across the stack.</h2>
+</div>
+<p class="text-on-surface-variant max-w-md">Our architects deploy cutting-edge technology to solve complex problems with elegant, maintainable code.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">language</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Web</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">High-performance React and Next.js applications built for scale and speed.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">smartphone</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Mobile</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Native-feel cross-platform experiences that deliver seamless user journeys.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">palette</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">UI/UX</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Intentional design systems and interfaces that prioritize the human experience.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-14 h-14 rounded-lg bg-surface-container-high flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">database</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Backend</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Robust architecture and secure APIs that serve as the backbone of your platform.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Why Choose Us -->
+<section class="py-32 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden">
+<img alt="Modern office architecture" class="w-full h-full object-cover" data-alt="high-end minimalist office interior with glass walls and clean white surfaces at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTCkMrb7ZHYcwb15YpGMCjO5sm5lptiJSCYybgmII6oGxq36taP_m9rSynA513WiN0YUfxZvHn2Ihkl5bBFjTM48QM3dClKQ3DgUqgK6Bq6UjtBWHX8GWfAkum2mjbSHVwipU17OIp5Vg5pnoNRtUQ_A9waF9O8JXwS3Jtijdz64a9jXjyqLRN30qffS7TplUQ0GkIHzLH1QrPUSgoHA09A4B8-G_wzanfk5P95fQ_5OEFLZnj4-hsJmJ07M-ih85pacnG3qQnXN4"/>
+</div>
+<div class="absolute -bottom-10 -right-10 hidden md:block w-64 h-64 momentum-gradient rounded-xl p-8 text-on-primary">
+<span class="display-lg font-black text-6xl">99%</span>
+<p class="mt-4 font-bold text-lg">Client Retention Rate</p>
+</div>
+</div>
+<div>
+<span class="text-secondary font-label text-[11px] font-bold tracking-[0.2em] uppercase mb-6 block">The WIN Advantage</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary-container tracking-tight mb-12">Built different by design.</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center">
+<span class="font-headline font-bold">01</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Technical Excellence</h3>
+<p class="text-on-surface-variant leading-relaxed">We don't just write code; we architect systems. Every line of code is peer-reviewed and tested for maximum reliability.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center">
+<span class="font-headline font-bold">02</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">User-Centric Approach</h3>
+<p class="text-on-surface-variant leading-relaxed">Technology is a tool for people. We focus on creating intuitive workflows that reduce friction and increase user delight.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center">
+<span class="font-headline font-bold">03</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Scalable Solutions</h3>
+<p class="text-on-surface-variant leading-relaxed">Your success is our priority. We build systems that grow with you, ensuring your digital infrastructure handles 10x traffic effortlessly.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Featured Projects -->
+<section class="py-24 bg-primary-container text-white px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20">
+<div>
+<span class="text-tertiary-fixed-dim font-label text-[11px] font-bold tracking-[0.2em] uppercase mb-4 block">Portfolio</span>
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight">Recent Deployments.</h2>
+</div>
+<a class="text-tertiary-fixed-dim font-bold border-b border-tertiary-fixed-dim/30 pb-1 mt-6 md:mt-0 hover:text-white transition-colors" href="#">See all projects</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[16/10] bg-slate-800 rounded-xl overflow-hidden mb-8">
+<img alt="Fintech Dashboard Project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="sleek professional dark mode fintech dashboard interface on a laptop screen with neon blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB1ST34hLheKx8nmynapCUigeanwjcH1_ZdLFjbECMQfiTZYD2YhP3_3YmZbOY-Dosj19_U896aE4Ll8rNm4O8Yi4z1FwueRTexiMvi18B4_BMlQs3a1ddZLyRV_opx6vUgCJgaP4UT32OMHjKNA5ixDo_t8iU_aA6jcayMr-IViqND9WNIPtG0aRbw94PFl0rbHMiA7bnTZZaeo4Fmc9Qxn8_l4qQRHhpSyvysalIjNeRJzWX204sdxyih0lqJ5HxnFDhl_jpQjU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex gap-3 mb-4">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-white/10 px-3 py-1 rounded-full">Fintech</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-white/10 px-3 py-1 rounded-full">Web App</span>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-2">Lumina Banking System</h3>
+<p class="text-on-primary-container">Next-generation asset management for venture-backed firms.</p>
+</div>
+<!-- Project 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[16/10] bg-slate-800 rounded-xl overflow-hidden mb-8">
+<img alt="AI Analytics Platform" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="minimalist visualization of complex data networks and AI nodes with soft glowing purple and blue lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXJf3Y5ZDxEnvI-O7gL2NoFnqjQby6fwVoMfvz0yL8kwApZ4RFmrA-Wf02lfigG-CahQPIbsJftG_4C4n4rJWDHywTSyMQ0RdwAZmxGWYE-q6OHFumafqdnDz2F5KOZTNxGukWOxiyz8yB5-1UusqX9QB1_lXzWmU5-pNmhIGt1MhModU9-P255sdecE0gWiFWH9TkSmI3rCCpBfRLMn2fLVXxdqx8nRPw5gPJc5EOnyLX_Ix0inhgQ3Vj4eXDbRPsFjcAHltUbIQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex gap-3 mb-4">
+<span class="text-[10px] font-bold tracking-widest uppercase bg-white/10 px-3 py-1 rounded-full">Artificial Intelligence</span>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-white/10 px-3 py-1 rounded-full">Infrastructure</span>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-2">Synthetix Core</h3>
+<p class="text-on-primary-container">Scalable backend architecture for real-time data processing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Testimonials -->
+<section class="py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<span class="text-secondary font-label text-[11px] font-bold tracking-[0.2em] uppercase mb-4 block">Kind Words</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary-container">Trusted by industry leaders.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quote 1 -->
+<div class="p-10 bg-surface-container-low rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-8">format_quote</span>
+<p class="text-lg text-on-surface italic leading-relaxed mb-8">"WIN's approach to our software architecture was surgical. They didn't just build what we asked; they built what we actually needed to scale."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img alt="Client portrait" class="w-full h-full object-cover" data-alt="professional portrait of a male CEO in a minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuCRs-uVhPGybMEuTgNy6CWIyb3fsVDGj_Y5kLS6TbhXGro8K2r9OcWJqX5ky5HXB9t-Oggd3I8lNcYWP0dVttgYc5VH4e4MLvoG68hZNCC3aQ1J96STcHVBz6A6PhZwNMdD1c4Hy9QqrZzM_4mRwEtf1UR-Fy_9SA5IHl4gVwDAZcRM9Fsv3pQ4qcvrCldurdKiVrD628NDAd3KRyUQE_i9YX5oUfvR044xR-5ZIvMgP5E5l1UGTHc0Ld8HVkdprdHJY3AtPvh90"/>
+</div>
+<div>
+<p class="font-bold text-sm">Marcus Chen</p>
+<p class="text-xs text-on-surface-variant">CTO at Verity Global</p>
+</div>
+</div>
+</div>
+<!-- Quote 2 -->
+<div class="p-10 bg-surface-container-low rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-8">format_quote</span>
+<p class="text-lg text-on-surface italic leading-relaxed mb-8">"Their attention to detail in the UI/UX phase is world-class. Our user engagement increased by 40% within the first month of deployment."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img alt="Client portrait" class="w-full h-full object-cover" data-alt="professional portrait of a female creative director in a bright airy studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrbNMJxGpr3JmNKqKmObugrVjiKtUKMM7u9CaStVR4zfo7B17bRr1yIzfD44AGIDGu29ACuiI6lZdjwPDhjEOVvZfVcS6UHbBcUOOvhiJpaVIUO9nYt4b2DdoGkhIHoITbvzixLkHbpsFvOFJI5w6MPvLK9ZpeQzKfdb-S5sr_rroykPVuoUpTlWzcct3DKVyH0T5Nc99RpHEFFw1o0BUj_4QOiM1kZmXqhLz73XLlfTbuXLxr1e8TTYSiuj8KLsigJJCS2mk0G7E"/>
+</div>
+<div>
+<p class="font-bold text-sm">Elena Rodriguez</p>
+<p class="text-xs text-on-surface-variant">Director of Product at Nexa</p>
+</div>
+</div>
+</div>
+<!-- Quote 3 -->
+<div class="p-10 bg-surface-container-low rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-secondary mb-8">format_quote</span>
+<p class="text-lg text-on-surface italic leading-relaxed mb-8">"A true partner in every sense. WIN handled our complex backend migration with zero downtime. Highly professional and technically elite."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img alt="Client portrait" class="w-full h-full object-cover" data-alt="professional portrait of a male founder in a modern office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQvlhXeKOMdWzjTRbEsbKGdb9IolUxIv4wTCpa3x_yukeVH9zDVic3k_5d2DeFgEuHZ3j1OUELI3Cv7P6rqAFmgw-QjLYXmNmS0VHBYJVQdxXRDqcwhA2D247RG2jFegEGjyn0nae71H42M6Qe5G9kfNFok93LE-_7WwhqDMxEgDdsZojQd9IyCP_8rUCYzvj8yZohfGvHIr-q6egNDEiynbv-QvZLCOM6MgZzf1kzdCaTkg6gvOF5hWVZqASy01kyroEH_nl5wl4"/>
+</div>
+<div>
+<p class="font-bold text-sm">James Sutherland</p>
+<p class="text-xs text-on-surface-variant">Founder at Velocity AI</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: CTA Banner -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto momentum-gradient rounded-3xl p-12 md:p-24 text-center text-on-primary relative overflow-hidden">
+<!-- Decorative circle -->
+<div class="absolute top-[-50%] left-[-20%] w-[60%] h-[120%] border border-white/10 rounded-full"></div>
+<h2 class="font-headline text-4xl md:text-7xl font-extrabold mb-8 relative z-10 leading-tight">Ready to start <br/> your project?</h2>
+<p class="text-lg md:text-xl text-white/80 max-w-xl mx-auto mb-12 relative z-10">Let's build something exceptional together. Our team is ready to discuss your vision and turn it into reality.</p>
+<div class="relative z-10">
+<button class="bg-white text-secondary px-12 py-5 rounded-xl font-bold text-xl hover:scale-105 transition-transform duration-300 shadow-2xl">Get a Quote</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 font-['Inter'] leading-relaxed text-sm full-width pt-24 pb-12 tonal-shift from surface to surface-container-low flat no-shadows">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-20">
+<div class="md:col-span-1">
+<span class="text-3xl font-black text-slate-900 dark:text-slate-50 mb-4 block">WIN</span>
+<p class="text-slate-500 dark:text-slate-400 mb-8 max-w-xs">Building premium, scalable digital environments for the world's most ambitious brands.</p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-50 mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:underline decoration-2 underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:underline decoration-2 underline-offset-4" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:underline decoration-2 underline-offset-4" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-50 mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:underline decoration-2 underline-offset-4" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:underline decoration-2 underline-offset-4" href="#">GitHub</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:underline decoration-2 underline-offset-4" href="#">Dribbble</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-slate-50 mb-6">Contact</h4>
+<p class="text-slate-500 dark:text-slate-400">hello@win-digital.com</p>
+<p class="text-slate-500 dark:text-slate-400 mt-2">London, United Kingdom</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-24 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400">© 2024 WIN Digital Architecture. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-slate-900 dark:text-slate-50 font-medium">Status: Operations Normal</span>
+</div>
+</div>
+</footer>
+</body></html>

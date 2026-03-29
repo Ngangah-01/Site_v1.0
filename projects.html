@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WIN | Digital Architecture Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#bec6e0",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-dim": "#d8dadc",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#001a42",
+              "on-background": "#191c1e",
+              "on-secondary-fixed-variant": "#004395",
+              "primary": "#000000",
+              "on-secondary-container": "#fefcff",
+              "inverse-on-surface": "#eff1f3",
+              "surface-container-high": "#e6e8ea",
+              "on-tertiary-container": "#9466ff",
+              "on-primary-container": "#7c839b",
+              "error": "#ba1a1a",
+              "surface": "#f7f9fb",
+              "secondary-container": "#2170e4",
+              "primary-container": "#131b2e",
+              "surface-bright": "#f7f9fb",
+              "tertiary-fixed": "#e9ddff",
+              "inverse-surface": "#2d3133",
+              "surface-variant": "#e0e3e5",
+              "on-surface-variant": "#45464d",
+              "surface-tint": "#565e74",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d8e2ff",
+              "primary-fixed": "#dae2fd",
+              "surface-container-low": "#f2f4f6",
+              "on-tertiary": "#ffffff",
+              "outline": "#76777d",
+              "on-primary-fixed-variant": "#3f465c",
+              "inverse-primary": "#bec6e0",
+              "on-error": "#ffffff",
+              "tertiary": "#000000",
+              "on-surface": "#191c1e",
+              "on-tertiary-fixed-variant": "#5516be",
+              "tertiary-container": "#23005c",
+              "on-primary-fixed": "#131b2e",
+              "on-tertiary-fixed": "#23005c",
+              "background": "#f7f9fb",
+              "secondary": "#0058be",
+              "secondary-fixed-dim": "#adc6ff",
+              "outline-variant": "#c6c6cd",
+              "tertiary-fixed-dim": "#d0bcff",
+              "surface-container-highest": "#e0e3e5",
+              "surface-container": "#eceef0",
+              "surface-container-lowest": "#ffffff",
+              "win-charcoal": "#0F172A"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            animation: {
+              'marquee': 'marquee 40s linear infinite',
+              'fade-up': 'fadeUp 1s ease-out forwards',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              fadeUp: {
+                '0%': { opacity: '0', transform: 'translateY(2rem)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .laptop-viewport {
+            scroll-snap-type: y mandatory;
+        }
+        .project-section {
+            scroll-snap-align: start;
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .marquee-content {
+            display: flex;
+            width: fit-content;
+            animation: marquee 40s linear infinite;
+        }
+        .marquee-content:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="rounded-full mt-4 mx-auto max-w-7xl sticky top-4 z-50 bg-white/70 backdrop-blur-md shadow-xl shadow-slate-900/5 flex justify-between items-center px-8 py-4 w-[95%]">
+<div class="text-2xl font-black tracking-tighter text-slate-900">WIN</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 hover:text-slate-900 transition-colors" href="./home.html">Home</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 hover:text-slate-900 transition-colors" href="./services.html">Services</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 hover:text-slate-900 transition-colors" href="./about.html">About</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 hover:text-slate-900 transition-colors" href="./pricing.html">Pricing</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-blue-600 border-b-2 border-blue-600 pb-1" href="./projects.html">Projects</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-sm text-slate-600 hover:text-slate-900 transition-colors" href="./contact.html">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary font-['Manrope'] font-bold text-sm px-6 py-2.5 rounded-full hover:scale-105 transition-transform duration-300">
+        Get a Quote
+    </button>
+</nav>  
+<main class="relative">
+<!-- Hero Title Section -->
+<section class="pt-24 pb-12 px-8 max-w-7xl mx-auto text-center">
+<span class="font-label text-label-sm tracking-[0.2em] uppercase text-on-primary-container mb-4 block">Selected Works</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary-container leading-none">
+            Digital <span class="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-on-tertiary-container to-tertiary-fixed-dim">Architecture</span> Portfolio
+        </h1>
+<p class="mt-8 text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
+            Precision-engineered digital environments designed to scale. Explore our recent case studies within the interactive viewport below.
+        </p>
+</section>
+<!-- The Architectural Mockup (Laptop) -->
+<section class="relative px-4 md:px-8 pb-32">
+<div class="max-w-6xl mx-auto relative group">
+<div class="relative bg-[#1e293b] rounded-[2.5rem] p-4 shadow-2xl overflow-hidden aspect-[16/10] border-4 border-[#334155]">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-1 bg-white/10 rounded-full mt-2"></div>
+<div class="w-full h-full bg-surface-container-lowest rounded-xl overflow-y-auto laptop-viewport hide-scrollbar relative">
+<!-- Project 1: Lumina Banking -->
+<div class="project-section min-h-full w-full bg-white relative">
+<div class="h-full flex flex-col">
+<div class="relative h-[60%] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern dark fintech app interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaFGjuoovniu1RFawx-s0tRipp9zuMuwBXn7Q7SRwSI5RSg3aZkWj64Q2AQRpZ85OYSp-rF_ggp407hJTbToy__nWyZntUR6clmJLkbghVQciCIhFnrJxqfS8Q-vhsvUS7CzfMIwtMePFaAPJoYnH3BXKFbxugM6gawLbu0_j5CKX69mfE1QtiVbcgTc3bkeVIC0EIfpunRqk2T9MNyZBzoBrS97d_qEvVW6Lt_MEme41OisXvMEaTZWf-SSSA2_WpXEWplRFRzK8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 to-transparent flex items-end p-12">
+<div>
+<h2 class="font-headline text-4xl font-bold text-white tracking-tight">Lumina Banking</h2>
+<p class="text-white/80 mt-2 font-body max-w-md">Surgical architecture for modern wealth management.</p>
+</div>
+</div>
+</div>
+<div class="p-12 grid grid-cols-2 gap-12 bg-surface-container-low">
+<div>
+<h3 class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-4">The Challenge</h3>
+<p class="text-on-surface text-sm leading-relaxed">Transitioning a legacy banking core to a high-concurrency cloud architecture while maintaining sub-50ms latency.</p>
+</div>
+<div>
+<h3 class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-4">The Outcome</h3>
+<ul class="space-y-2 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-on-tertiary-container">check_circle</span> 400% Transaction Speed</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-on-tertiary-container">check_circle</span> Zero Downtime Migration</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: Synthetix Core -->
+<div class="project-section min-h-full w-full bg-slate-950 relative">
+<div class="h-full flex flex-col">
+<div class="relative h-[60%] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Futuristic server room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-KY9-RjxA_5w5F_TeA5kAg8UVUDtN-cC48ydM-1qBNweaO5IguL-pCmVhqS5H4B84N_zXcmgFRGYj7UGGxQwSs0TKWCAFaAIr_JWqwvYRAJ89NUtzHhBZuYJRkMLdfa6mQLjUtA7kh0DrLy49WBIvthoRLNZDY-Iny2Sq8OnmEjCg0NpCuEcn1yBpOYCIu9d0I_KfwtNXLTR_3h4S6hnzbOpoSr3ENzVp6K7onNgt3Rkv4OMqAmoVsC4qmZR9JSdlOQH62RtIDDM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent flex items-end p-12">
+<div>
+<h2 class="font-headline text-4xl font-bold text-white tracking-tight">Synthetix Core</h2>
+<p class="text-white/80 mt-2 font-body max-w-md">Real-time AI infrastructure for the next generation of automation.</p>
+</div>
+</div>
+</div>
+<div class="p-12 grid grid-cols-2 gap-12 text-white bg-slate-900">
+<div>
+<h3 class="font-label text-xs uppercase tracking-widest text-on-tertiary-container font-bold mb-4">The Challenge</h3>
+<p class="text-slate-300 text-sm leading-relaxed">Developing an elastic compute fabric capable of processing 2TB of telemetry data per second.</p>
+</div>
+<div>
+<h3 class="font-label text-xs uppercase tracking-widest text-on-tertiary-container font-bold mb-4">Architecture</h3>
+<div class="flex gap-2 flex-wrap">
+<span class="bg-slate-800 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-tighter">Rust</span>
+<span class="bg-slate-800 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-tighter">WASM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative w-[110%] -left-[5%] h-6 bg-[#334155] rounded-b-3xl shadow-lg mt-[-8px] z-10 flex justify-center">
+<div class="w-24 h-full bg-[#1e293b] rounded-b-xl border-x border-[#0f172a]/20"></div>
+</div>
+<div class="absolute -right-16 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-4 text-on-primary-container">
+<div class="flex flex-col items-center">
+<span class="text-[10px] uppercase font-bold tracking-widest [writing-mode:vertical-lr] mb-4">Scroll Viewport</span>
+<div class="w-px h-24 bg-gradient-to-b from-secondary to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Explorations Marquee -->
+<section class="py-24 overflow-hidden scroll-reveal">
+<div class="px-8 max-w-7xl mx-auto mb-12">
+<h2 class="font-headline text-4xl font-extrabold text-primary-container tracking-tight">Recent Explorations</h2>
+<p class="text-on-surface-variant mt-2">Active experiments in structural digital systems.</p>
+</div>
+<div class="flex overflow-hidden relative">
+<div class="marquee-content gap-6 px-4">
+<!-- Project Card 1 -->
+<div class="w-[450px] aspect-video bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 flex-shrink-0 group cursor-pointer">
+<img alt="Experiment 01" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXiZX5Bb3U4WXm_n3iEveApkdThKokF6aXa7PBQotd2E1sjubqjvLUJVrMMHNgIUjqS8TQwmTu_WJQKjpJf9tqmYuww9Ncr3mZ0bV89k1yLdncDqVG3a7hQi6po2JYUKC1-Tx9AarS9wOM9khWxsKzfmE6lSJJQoN8J_0IM8z68pS_J4U73ZmJ5WpvdMbrIKPaHTdvB8Jm5nJAjY54HAVcs8a6NM6KnR2CQvwUtYoQ6_ea4HezdpqUFLHzW3KkxbJuX4R19oZWOX0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
+<span class="text-[10px] text-white/60 uppercase tracking-widest mb-1">Concept 042</span>
+<h4 class="text-xl font-bold text-white">Quantum Interface Kit</h4>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="w-[450px] aspect-video bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 flex-shrink-0 group cursor-pointer">
+<img alt="Experiment 02" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHAvQ3voYQsG7YPqQV42mfnE0jvR094IkfsNWg-sNRz0rs37WpYaAaCk5uCgm2qLYdOdSd_tHZVTlJ8yJwL986bvKHB7Vq8YMlMAfWu12NZ35ZVNaJ3MA1lIlLtLv-BQtW7OnXY224h65XZbmWZHgmORX9NnWIDTcKDSQiFGL-_nSudurmOBWVmhGdp72ZUypK_aYlauo8Dw2LqXIAJHEr3oGRkEE-XJYts-HckAQbakLfuDw25IuAxfdix_GFx5kCZ5vsm_MwzMU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
+<span class="text-[10px] text-white/60 uppercase tracking-widest mb-1">Concept 089</span>
+<h4 class="text-xl font-bold text-white">Neural Mesh Grid</h4>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="w-[450px] aspect-video bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 flex-shrink-0 group cursor-pointer">
+<img alt="Experiment 03" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmjoh7YfXl0r9PW88XFYrGb4v0GHDpnzk60KcHFfsDl2GaKjuoQ1VYZi3bPJrTXJZlHEhf9nRX5B7ebPvdQa8O8H_PbzxDFPP-Dt9o_FdEe3HldmZH9GwaPpoHZHBRCr6EYQJxb-sx7WbvmLvZLqOJQvvc5uV-klSyJo-7IoNEXihK6TOKrjw5WLuGSvu9SALnyRj9PiLvHo7-_UoJ9O1-zE9fksPm9EpOt_DuH8qG5kWchJeDrZ1d1_Je5exjl_XkSMiWhJBU0Fk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
+<span class="text-[10px] text-white/60 uppercase tracking-widest mb-1">Concept 112</span>
+<h4 class="text-xl font-bold text-white">Kinetic Typo System</h4>
+</div>
+</div>
+<!-- Clones for seamless loop -->
+<div class="w-[450px] aspect-video bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 flex-shrink-0 group cursor-pointer">
+<img alt="Experiment 01 clone" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt979v-ymEYRLihHoHh9FuqVuHGaUA2yf3EmzNMyzIK_25CTBdX4AhGTEE1jdfvJ-bwpolFu9PfV2fHPuwj59KMKbh8Jm3WTIHsBJFDnNCqD9m7dLkfn_O2Z_zuUIGXqwsuz1yOUGAod2D4ewHFC35gJHHStP2c4NQMhGgu63kIJf9TxXfjFKIFE6p-eGgfDt6iriH61VTaoAZN33S7Tjhb58cZuuHiALAZCzHm7RpgPysckxg5xi18Od7-9nvBidk-QwxHn1008E"/>
+</div>
+<div class="w-[450px] aspect-video bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 flex-shrink-0 group cursor-pointer">
+<img alt="Experiment 02 clone" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOWjBFg-To3p1WQkzhY7IFt5fHlvadUkXA7VgeejzGCEqJww5eYg-d7ylsGLjzrnY1M4-1b9Mr84xNoHbMZRQDQji360bhtjNYaEo_cwqCzOmqcfvw8IGY8UPbI1gEaYanz8CqijsBFI1XAHlQQpa2VbADaWfG3kT7ngniNgXM8lNK6LVWKq453OLeo5ap3phKYpRGTcGYKkItf3Y3OGluRv4ULGHqWj-wpeUSv13-9QUeBanjIy_7guef5VL1C-Zwko7lDfYiLec"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Engineering Excellence Bento Grid -->
+<section class="py-32 px-8 bg-win-charcoal text-white scroll-reveal">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div class="max-w-2xl">
+<span class="font-label text-xs uppercase tracking-widest text-on-tertiary-container mb-4 block">Standards &amp; Quality</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold leading-tight">Engineering Excellence <br/>as the Foundational Core</h2>
+</div>
+<p class="text-slate-400 max-w-sm mb-1">Our methodologies are rooted in structural integrity, ensuring every pixel serves a functional purpose.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[650px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 md:row-span-2 bg-slate-900/40 border border-white/5 backdrop-blur-md rounded-3xl p-10 flex flex-col justify-between group hover:border-on-tertiary-container/30 transition-all duration-500 relative overflow-hidden">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-xl bg-on-tertiary-container/10 flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-tertiary-container">architecture</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-6">Structural Optimization Protocol</h3>
+<p class="text-slate-400 text-lg leading-relaxed max-w-md">We utilize a proprietary audit system to ensure codebase longevity and aesthetic resilience against evolving browser standards.</p>
+</div>
+<div class="relative z-10">
+<a class="inline-flex items-center gap-2 font-bold text-on-tertiary-container hover:gap-4 transition-all group/link" href="#">
+                            Learn Protocol <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-on-tertiary-container/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+</div>
+<!-- Secondary Card 1 -->
+<div class="bg-slate-900/40 border border-white/5 backdrop-blur-md rounded-3xl p-8 flex flex-col justify-between group hover:border-secondary/30 transition-all duration-500">
+<div>
+<span class="material-symbols-outlined text-secondary mb-6 text-3xl">analytics</span>
+<h3 class="font-headline text-xl font-bold mb-3">Performance Metrics</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Achieving 100/100 Lighthouse scores by default through precise asset management.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest text-secondary hover:underline underline-offset-8" href="#">View Metrics</a>
+</div>
+<!-- Secondary Card 2 -->
+<div class="bg-slate-900/40 border border-white/5 backdrop-blur-md rounded-3xl p-8 flex flex-col justify-between group hover:border-white/20 transition-all duration-500">
+<div>
+<span class="material-symbols-outlined text-slate-300 mb-6 text-3xl">layers</span>
+<h3 class="font-headline text-xl font-bold mb-3">Atomic Stack</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Built on a foundation of Tailwind, Rust, and Headless architectural patterns.</p>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors" href="#">Explore Stack</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Premium CTA Section -->
+<section class="py-40 px-8 relative overflow-hidden scroll-reveal">
+<!-- Background Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl aspect-square bg-gradient-to-br from-secondary/20 via-on-tertiary-container/10 to-transparent blur-[120px] rounded-full pointer-events-none"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-on-tertiary-container font-bold mb-8 block">Project Inquiry</span>
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary-container leading-[1.1] mb-12">
+                Ready to build something <span class="italic font-light opacity-60">immortal?</span>
+</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto mb-16 leading-relaxed">
+                We are currently accepting high-impact architectural commissions for Q3 2024. Let's discuss your system requirements.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary text-white px-10 py-5 rounded-2xl font-bold hover:bg-secondary hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-500 group">
+                    Start a Project 
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-white border border-outline-variant px-10 py-5 rounded-2xl font-bold hover:bg-surface transition-colors duration-300">
+                    Book Architectural Review
+                </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full py-24 px-8 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-slate-100 font-['Inter'] text-sm leading-relaxed tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-slate-900 dark:text-slate-50">WIN</div>
+<p class="opacity-60">Building the structural integrity of the digital web since 2014.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase tracking-widest text-[10px]">Ecosystem</h4>
+<ul class="space-y-2">
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">Work</a></li>
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">Methods</a></li>
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">Insights</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase tracking-widest text-[10px]">Studio</h4>
+<ul class="space-y-2">
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">London</a></li>
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">New York</a></li>
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">Remote</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase tracking-widest text-[10px]">Connect</h4>
+<ul class="flex gap-4">
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 underline decoration-2 underline-offset-4" href="#">LinkedIn</a></li>
+<li><a class="opacity-60 hover:opacity-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200" href="#">Github</a></li>
+</ul>
+<div class="pt-4">
+<p class="text-[10px] opacity-40">© 2024 WIN Digital Architecture. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Scroll Reveal Interaction
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.scroll-reveal').forEach(section => {
+        revealObserver.observe(section);
+    });
+</script>
+</body></html>

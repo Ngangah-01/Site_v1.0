@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | WIN Digital Architecture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "on-primary-fixed": "#131b2e",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f2f4f6",
+              "on-secondary-container": "#fefcff",
+              "on-background": "#191c1e",
+              "on-surface-variant": "#45464d",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#3f465c",
+              "surface-container": "#eceef0",
+              "on-secondary-fixed": "#001a42",
+              "secondary-container": "#2170e4",
+              "tertiary-fixed-dim": "#d0bcff",
+              "tertiary-fixed": "#e9ddff",
+              "surface": "#f7f9fb",
+              "secondary-fixed": "#d8e2ff",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#23005c",
+              "surface-container-high": "#e6e8ea",
+              "on-tertiary-container": "#9466ff",
+              "on-primary-container": "#7c839b",
+              "outline": "#76777d",
+              "secondary": "#0058be",
+              "on-surface": "#191c1e",
+              "surface-dim": "#d8dadc",
+              "tertiary-container": "#23005c",
+              "surface-bright": "#f7f9fb",
+              "primary": "#000000",
+              "on-secondary-fixed-variant": "#004395",
+              "surface-tint": "#565e74",
+              "primary-fixed": "#dae2fd",
+              "inverse-on-surface": "#eff1f3",
+              "on-secondary": "#ffffff",
+              "primary-container": "#131b2e",
+              "outline-variant": "#c6c6cd",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#adc6ff",
+              "tertiary": "#000000",
+              "surface-container-highest": "#e0e3e5",
+              "inverse-surface": "#2d3133",
+              "background": "#f7f9fb",
+              "inverse-primary": "#bec6e0",
+              "primary-fixed-dim": "#bec6e0",
+              "on-tertiary-fixed-variant": "#5516be",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar (Stealth Navigation Base) -->
+<nav class="bg-white/70 backdrop-blur-xl text-slate-900 font-['Manrope'] font-bold tracking-tight rounded-full mt-6 mx-auto max-w-fit px-8 py-3 sticky top-0 z-50 no-border shadow-[0_20px_50px_rgba(0,0,0,0.04)] flex items-center gap-12 group transition-all duration-700">
+<div class="text-2xl font-black tracking-tighter text-slate-900">WIN</div>
+<!-- Standard Nav Links (Switch to Projects on scroll logic implied) -->
+<div class="flex items-center gap-8">
+<a class="text-blue-600 font-bold hover:opacity-80 transition-all duration-300" href="#">Work</a>
+<a class="text-slate-500 hover:text-slate-900 transition-colors hover:opacity-80 transition-all duration-300" href="#">Expertise</a>
+<a class="text-slate-500 hover:text-slate-900 transition-colors hover:opacity-80 transition-all duration-300" href="#">Approach</a>
+<a class="text-slate-500 hover:text-slate-900 transition-colors hover:opacity-80 transition-all duration-300" href="#">Studio</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full scale-95 active:scale-90 transition-transform text-sm">
+            Contact Us
+        </button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative pt-20 px-6 max-w-7xl mx-auto space-y-24 pb-32">
+<!-- Hero Section -->
+<header class="text-center space-y-6">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-primary-container opacity-60">Case Studies</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-primary-container leading-none">
+                Digital <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-on-tertiary-container to-tertiary-fixed-dim">Masterpieces</span>
+</h1>
+</header>
+<!-- Immersive Laptop Mockup Section -->
+<section class="relative mx-auto max-w-6xl">
+<!-- The Laptop Frame -->
+<div class="relative rounded-t-3xl border-[12px] border-primary-container bg-primary-container shadow-2xl overflow-hidden aspect-[16/10]">
+<!-- Internal Laptop Viewport -->
+<div class="absolute inset-0 bg-surface-container-low overflow-y-auto hide-scrollbar rounded-sm">
+<!-- Internal Project Navigation (The 'Locked' Navigation Transition) -->
+<div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md px-8 py-4 flex items-center justify-between border-b border-black/5">
+<div class="flex gap-6">
+<span class="text-sm font-bold text-secondary">Aero Mobile</span>
+<span class="text-sm font-medium text-on-surface/40 hover:text-on-surface cursor-pointer">Quantom Dashboard</span>
+<span class="text-sm font-medium text-on-surface/40 hover:text-on-surface cursor-pointer">Orizon AI</span>
+</div>
+<div class="flex gap-2">
+<div class="w-2 h-2 rounded-full bg-error"></div>
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+<!-- Project Deep Dive Content -->
+<div class="p-12 space-y-16">
+<!-- Project Header -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+<div class="space-y-4">
+<h2 class="font-headline text-5xl font-extrabold text-primary-container">Aero Mobile</h2>
+<p class="text-xl font-body text-on-surface-variant leading-relaxed">
+                                    Redefining the aerospace logistics interface through a high-performance mobile ecosystem.
+                                </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-xs font-semibold uppercase tracking-wider">Next.js</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-xs font-semibold uppercase tracking-wider">Framer Motion</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-xs font-semibold uppercase tracking-wider">Tailwind</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-xs font-semibold uppercase tracking-wider">Rust Core</span>
+</div>
+</div>
+<!-- Featured Image -->
+<div class="rounded-xl overflow-hidden aspect-video shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Modern minimalist mobile dashboard showing complex data visualizations with deep blues and vibrant neon accents on a clean glass surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR8ANq0aykHWO98uHraxO4Qx5IW1jKnh7amXmIwhOtmM3XNy7p9TxHbuH3lRpbuZ_QOXxbnIvJ14Pz7ajOOlwU3yT_eHqcBfz5HQtRuxMYaAPxXt2FQCx0Greetgx9Oq8RVHyPsVRnjdIpYLAW3ymSGyUekFnOcXInq06xZEz__WmSkGjB74XgtyrGnlU4q2D3ZYXR228nvrujx-ev6Y2IdzKzjPOkmyTsK8Ein2sSaSNCJspOk6PX7GNZ6mw7ItBNc13gOVnNcuo"/>
+</div>
+<!-- Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="space-y-6">
+<h3 class="font-headline text-2xl font-bold">The Challenge</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                    Aero Logistics faced critical delays due to fragmented data streams and legacy legacy infrastructure. Our mission was to architect a unified dashboard capable of processing 20,000+ real-time flight telemetry points without latency.
+                                </p>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline text-2xl font-bold">Visual Strategy</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                    We employed a "Dark-Core" aesthetic to reduce cognitive load during night shifts. Using an isometric grid system and high-contrast typography, we ensured critical alerts are prioritized through semantic color layering.
+                                </p>
+</div>
+</div>
+<!-- Outcomes Section -->
+<div class="bg-primary-container text-white rounded-2xl p-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<span class="text-secondary-fixed text-4xl font-black">42%</span>
+<p class="opacity-70 text-sm uppercase tracking-widest mt-2">Increase in Efficiency</p>
+</div>
+<div class="text-center md:text-left">
+<span class="text-secondary-fixed text-4xl font-black">&lt;10ms</span>
+<p class="opacity-70 text-sm uppercase tracking-widest mt-2">Data Latency</p>
+</div>
+<div class="text-center md:text-left">
+<span class="text-secondary-fixed text-4xl font-black">99.9%</span>
+<p class="opacity-70 text-sm uppercase tracking-widest mt-2">System Uptime</p>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator (Floating inside viewport) -->
+<div class="fixed right-6 top-1/2 -translate-y-1/2 flex flex-col items-center gap-4">
+<div class="w-1 h-32 bg-on-surface/5 rounded-full relative">
+<div class="absolute top-0 left-0 w-full h-1/4 bg-secondary rounded-full"></div>
+</div>
+<span class="rotate-90 text-[10px] font-bold uppercase tracking-widest opacity-40 origin-center whitespace-nowrap">Scroll Viewport</span>
+</div>
+</div>
+</div>
+<!-- Laptop Base/Keyboard part for 3D effect -->
+<div class="h-4 bg-slate-800 rounded-b-[40px] w-[104%] -ml-[2%] relative z-10"></div>
+<div class="h-2 bg-slate-900 rounded-b-[40px] w-[108%] -ml-[4%] opacity-20 blur-md"></div>
+</section>
+<!-- Engineering Excellence Section (Bento Grid) -->
+<section class="space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-4 max-w-2xl">
+<h2 class="font-headline text-4xl font-bold text-primary-container tracking-tight">Engineering Excellence</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Beyond aesthetics, we build for durability. Our architectural choices are driven by performance audits and future-proof scalability.
+                    </p>
+</div>
+<div class="flex gap-4">
+<button class="material-symbols-outlined p-4 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors">west</button>
+<button class="material-symbols-outlined p-4 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors">east</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Competency Card 1 -->
+<div class="group p-10 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-all duration-500 space-y-8 flex flex-col justify-between">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<h4 class="font-headline text-2xl font-bold text-primary-container">System Scalability</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Architecting microservices that expand fluidly with your user base, ensuring no performance degradation at peak loads.
+                        </p>
+</div>
+<div class="pt-6 border-t border-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity">
+<a class="text-sm font-bold flex items-center gap-2 text-secondary" href="#">Learn Protocol <span class="material-symbols-outlined text-sm">trending_flat</span></a>
+</div>
+</div>
+<!-- Competency Card 2 -->
+<div class="group p-10 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-all duration-500 space-y-8 flex flex-col justify-between">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">speed</span>
+<h4 class="font-headline text-2xl font-bold text-primary-container">Performance Audits</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Deep-tier optimization from Core Web Vitals to server-side rendering, hitting sub-second paint times consistently.
+                        </p>
+</div>
+<div class="pt-6 border-t border-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity">
+<a class="text-sm font-bold flex items-center gap-2 text-on-tertiary-container" href="#">View Metrics <span class="material-symbols-outlined text-sm">trending_flat</span></a>
+</div>
+</div>
+<!-- Competency Card 3 -->
+<div class="group p-10 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-all duration-500 space-y-8 flex flex-col justify-between">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+<h4 class="font-headline text-2xl font-bold text-primary-container">Cloud Orchestration</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Sophisticated infrastructure as code (IaC) deployment via AWS/Vercel with automated CI/CD security pipelines.
+                        </p>
+</div>
+<div class="pt-6 border-t border-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity">
+<a class="text-sm font-bold flex items-center gap-2 text-tertiary-fixed-dim" href="#">Explore Stack <span class="material-symbols-outlined text-sm">trending_flat</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="rounded-3xl bg-primary-container p-16 md:p-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary/20 blur-[120px] -mr-48 -mt-48 rounded-full"></div>
+<div class="relative z-10 max-w-2xl space-y-8">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-white leading-tight">Ready to architect your next digital era?</h2>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-secondary to-on-tertiary-container text-white px-10 py-4 rounded-lg font-bold hover:opacity-90 transition-all">Start a Project</button>
+<button class="text-white border border-white/20 px-10 py-4 rounded-lg font-bold hover:bg-white/5 transition-all">View Process</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 px-8 border-t border-slate-100 bg-slate-50 font-['Inter'] text-sm leading-relaxed tracking-wide">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-slate-900">WIN</div>
+<p class="text-slate-500 opacity-60">High-end software development for industry leaders and visionary startups.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-slate-900">Studio</h5>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Our Story</a>
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Careers</a>
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Contact</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-slate-900">Resources</h5>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">LinkedIn</a>
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Github</a>
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Twitter</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-slate-900">Legal</h5>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Privacy</a>
+<a class="text-slate-900 opacity-60 hover:opacity-100 transition-opacity hover:text-blue-600" href="#">Terms</a>
+</nav>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-12 mt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-slate-500 opacity-60">© 2024 WIN Digital Architecture. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="text-xs font-bold text-slate-900 uppercase tracking-widest">Built in Switzerland</span>
+</div>
+</div>
+</footer>
+</body></html>
